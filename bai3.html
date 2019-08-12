@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrInput = [
+                       [4,5,2,3],
+                       [5,3,2,1],
+                       [1,2,3,4],
+                       [2,7,2,4]
+                       ];
+                       function sumDiagonal() {
+                           let sum = 0;
+                           for(let i = 0 ; i < arrInput.length ; i++) {
+                               for(let n = 0 ; n < arrInput.length ; n++) {
+                                   if (i == n) {
+                                      sum += arrInput[i][n];
+                                   }
+                               }
+                           }
+                           return  sum ;
+                       }
+    document.write(sumDiagonal());
+    
+    </script>
+</body>
+</html>
